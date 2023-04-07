@@ -17,10 +17,12 @@ public class DBConnector {
      * @throws SQLException
      */
     public static Connection getDBConnection() throws SQLException {
+
         final String url = "jdbc:mysql://localhost/";
         final String database = "all-java";
         final String user = "root";
         final String password = "password";
+
         return DriverManager.getConnection(url + database, user, password);
     }
 
@@ -31,8 +33,8 @@ public class DBConnector {
      * @throws SQLException
      */
     public static Connection getDBConnection2() throws SQLException {
-        final String url = "jdbc:mysql://localhost/all-java";
 
+        final String url = "jdbc:mysql://localhost/all-java";
         final Properties properties = new Properties();
         properties.setProperty("user", "root");
         properties.setProperty("password", "password");

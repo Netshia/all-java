@@ -21,7 +21,7 @@ public class DBConnector {
         final String url = "jdbc:mysql://localhost/";
         final String database = "all-java";
         final String user = "root";
-        final String password = "password";
+        final String password = "blessing";
 
         return DriverManager.getConnection(url + database, user, password);
     }

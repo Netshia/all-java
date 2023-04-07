@@ -29,6 +29,7 @@ public class InsetDataDML {
             );
 
         } catch (SQLException e) {
+            e.printStackTrace();
             System.exit(-1);
         }
     }
